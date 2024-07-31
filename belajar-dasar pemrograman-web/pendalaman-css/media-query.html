@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #content {
+            width: 70%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #ddd;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 1000px) {
+            #content, aside {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!--Meta tag <meta name="viewport" content="width=device-width, initial-scale=1.0"> digunakan untuk menyesuaikan viewport dengan lebar perangkat, memastikan tampilan responsif yang optimal.-->
+<!--CSS menggunakan @media screen and (max-width: 1000px) untuk menerapkan aturan styling ketika lebar viewport kurang dari atau sama dengan 1000px.-->
+<!--Pada kondisi ini, elemen #content dan aside akan memiliki lebar 100% dan padding yang lebih kecil untuk menyesuaikan tampilan yang lebih sempit pada perangkat mobile atau layar dengan lebar yang lebih kecil.-->
+
+<header>
+    <h1>Responsive Layout Example</h1>
+</header>
+
+<div class="container">
+    <div id="content">
+        <h2>Main Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac odio et magna hendrerit venenatis sit amet non velit. Donec pretium turpis vitae velit fermentum malesuada.</p>
+    </div>
+
+    <aside>
+        <h3>Aside Content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac odio et magna hendrerit venenatis sit amet non velit.</p>
+    </aside>
+</div>
+
+</body>
+</html>

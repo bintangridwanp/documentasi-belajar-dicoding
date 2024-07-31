@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Element & Model</title>
+    <style>
+        /* Mengatur gaya untuk konten paragraf */
+        p {
+            background-color: lightblue; /* Warna latar belakang konten */
+
+            /*Padding: area yang menjadi jarak antara border elemen dengan konten yang ditampilkan.*/
+            padding: 20px; /* Jarak antara konten dengan border */
+
+            /*Border: garis yang mencakup konten beserta padding.*/
+            border: 5px solid navy; /* Border dengan warna navy dan ketebalan 5px */
+
+            /*Margin: area jarak di luar border.*/
+            margin: 20px; /* Jarak antara border dengan elemen lain */
+
+            /*    Edge of Element: Batas dari elemen <p>, termasuk margin di sekeliling border.*/
+
+        }
+
+        /*Dimension*/
+        p.box{
+            height: 300px;  /* Tinggi elemen box */
+            width: 300px;   /* Lebar elemen box */
+        }
+
+        /*Limiting Dimension*/
+
+        /* Mengatur gaya untuk elemen content */
+        .content {
+            /*menetapkan nilai lebar maksimal yang harus dimiliki elemen.*/
+            max-width: 800px;
+
+            /* menetapkan nilai lebar minimal yang harus dimiliki elemen.*/
+            min-width: 200px;
+
+            height: 400px; /* Tinggi elemen content */
+            background-color: lightblue; /* Warna latar belakang konten */
+            padding: 20px; /* Jarak antara konten dengan border */
+            border: 5px solid navy; /* Border dengan warna navy dan ketebalan 5px */
+            margin: 20px auto; /* Jarak antara border dengan elemen lain dan memusatkan elemen secara horizontal */
+            box-sizing: border-box; /* Menyertakan padding dan border dalam perhitungan lebar dan tinggi */
+        }
+    </style>
+</head>
+<body>
+
+<!--Content-->
+<p class="box">Ini adalah contoh penggunaan box model dalam CSS. Konten ini memiliki padding, border, dan margin.</p>
+
+<!--Content-->
+<p class="content">  Ini adalah contoh penggunaan box model dalam CSS. Konten ini memiliki padding, border, dan margin. Lebar maksimum konten ini adalah 800 piksel, dan tinggi konten ini adalah 400 piksel.</p>
+
+
+</body>
+</html>

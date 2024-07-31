@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning</title>
+    <style>
+
+        /*Normal Flow/Static Flow*/
+        .container-satu {
+            background-color: lightblue;
+            padding: 20px;
+        }
+        .box-satu {
+            background-color: coral;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /*Relative Positioning*/
+        .container-dua {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+        }
+        .box-dua {
+            background-color: coral;
+            padding: 10px;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+
+        /*Absolute Positioning*/
+        .container-tiga {
+            position: relative;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+            height: 300px;
+        }
+        .box-tiga {
+            background-color: coral;
+            padding: 10px;
+            position: absolute;
+            top: 20px;
+            left: 30px
+        }
+
+        /*Fixed Positioning*/
+        .container-empat {
+            background-color: lightblue;
+            padding: 20px;
+            height: 1000px; /* Panjang untuk scrolling */
+        }
+        .box-empat {
+            background-color: coral;
+            padding: 10px;
+            position: fixed;
+            top: 20px;
+            left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--Normal Flow/Static Flow-->
+<h1>Normal Flow/Static Flow</h1>
+<div class="container-satu">
+    <div class="box-satu">Box 1</div>
+    <div class="box-satu">Box 2</div>
+    <div class="box-satu">Box 3</div>
+</div>
+
+
+<!--Relative Positioning-->
+<h1>Relative Positioning</h1>
+<div class="container-dua">
+    <div class="box-dua">Box 1</div>
+    <div class="box-dua">Box 2</div>
+    <div class="box-dua">Box 3</div>
+</div>
+
+
+<!--Absolute Positioning-->
+<h1>Absolute Positioning</h1>
+<div class="container-tiga">
+    <div class="box-tiga">Box 1 (Absolute)</div>
+</div>
+<div class="box-tiga">Box 2 (Absolute)</div>
+<div class="box-tiga">Box 3 (Absolute)</div>
+
+
+<!--Fixed Positioning-->
+<h1>Fixed Positioning</h1>
+<div class="container-empat">
+    <div class="box-empat">Fixed Box</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eros nec purus fringilla, nec tempus nunc scelerisque.</p>
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis malesuada arcu, sit amet maximus magna efficitur ac.</p>
+<div class="box-empat">Another Fixed Box</div>
+
+</body>
+</html>

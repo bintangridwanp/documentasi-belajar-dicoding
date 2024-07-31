@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Left Example</title>
+    <style>
+        .container {
+            width: 600px;
+            overflow: hidden; /* Clearfix */
+            border: 2px solid deeppink;
+        }
+        .box {
+            float: left;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<!--Floating dalam konteks CSS mengacu pada properti yang memungkinkan elemen HTML untuk mengapung di sebelah kiri atau kanan dari elemen-elemen lain di sekitarnya dalam tata letak halaman.-->
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+<!--Mengatur permaslahan dalam penerapan floating-->
+
+<!-- 1. Properti clear dalam CSS digunakan untuk mengontrol perilaku elemen terhadap elemen yang mengapung (floating) di sekitarnya. -->
+
+<!--clear: left; : Menghapus floating pada sisi kiri elemen. Elemen akan diletakkan di bawah elemen yang memiliki floating ke kiri.-->
+<!--clear: right; : Menghapus floating pada sisi kanan elemen. Elemen akan diletakkan di bawah elemen yang memiliki floating ke kanan.-->
+<!--clear: both; : Menghapus floating pada kedua sisi elemen. Elemen akan diletakkan di bawah elemen yang memiliki floating baik ke kiri maupun ke kanan.-->
+<!--clear: none; : Tidak ada penghapusan floating pada elemen. Elemen akan tetap memungkinkan elemen lain untuk berada di sebelahnya dengan floating.-->
+<!--clear: inherit; : Mengambil nilai clear dari elemen induknya.-->
+
+<!-- 2. Teknik Overflow-->
+<!--overflow: auto; : Menambahkan scrollbar hanya jika konten benar-benar meluap. -->
+
+
+</body>
+</html>

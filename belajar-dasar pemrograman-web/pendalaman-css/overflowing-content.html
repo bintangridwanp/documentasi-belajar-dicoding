@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflowing Content</title>
+    <style>
+       .contaner{
+           display: flex;
+           flex-direction: row;
+       }
+        div.content  {
+            width: 200px; /* Lebar tetap untuk elemen box */
+            height: 200px; /* Tinggi tetap untuk elemen box */
+            background-color: lightblue; /* Warna latar belakang konten */
+            padding: 10px; /* Jarak antara konten dengan border */
+            border: 2px solid navy; /* Border dengan warna navy dan ketebalan 2px */
+            margin: 10px; /* margin mengatur jarak antar content */
+        }
+
+        #satu {
+            overflow: visible;
+        }
+
+        #dua {
+            overflow: hidden;
+        }
+
+        #tiga {
+            overflow: scroll;
+        }
+
+        #empat {
+            overflow: auto;
+        }
+
+        #lima{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="contaner">
+    <div class="content" id="satu">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta impedit ipsa labore maxime neque nesciunt omnis perspiciatis saepe sequi. Autem beatae impedit officiis quaerat voluptate! Earum fugiat nostrum soluta!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta impedit ipsa labore maxime neque nesciunt omnis perspiciatis saepe sequi. Autem beatae impedit officiis quaerat voluptate! Earum fugiat nostrum soluta!</p>
+    </div>
+
+    <div class="content" id="dua">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta impedit ipsa labore maxime neque nesciunt omnis perspiciatis saepe sequi. Autem beatae impedit officiis quaerat voluptate! Earum fugiat nostrum soluta!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta impedit ipsa labore maxime neque nesciunt omnis perspiciatis saepe sequi. Autem beatae impedit officiis quaerat voluptate! Earum fugiat nostrum soluta!</p>
+    </div>
+
+    <div class="content" id="tiga">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta impedit ipsa labore maxime neque nesciunt omnis perspiciatis saepe sequi. Autem beatae impedit officiis quaerat voluptate! Earum fugiat nostrum soluta!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta impedit ipsa labore maxime neque nesciunt omnis perspiciatis saepe sequi. Autem beatae impedit officiis quaerat voluptate! Earum fugiat nostrum soluta!</p>
+    </div>
+
+    <div class="content" id="empat">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta impedit ipsa labore maxime neque nesciunt omnis perspiciatis saepe sequi. Autem beatae impedit officiis quaerat voluptate! Earum fugiat nostrum soluta!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta impedit ipsa labore maxime neque nesciunt omnis perspiciatis saepe sequi. Autem beatae impedit officiis quaerat voluptate! Earum fugiat nostrum soluta!</p>
+    </div>
+
+    <div class="content" id="lima">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta impedit ipsa labore maxime neque nesciunt omnis perspiciatis saepe sequi. Autem beatae impedit officiis quaerat voluptate! Earum fugiat nostrum soluta!</p>
+    </div>
+
+</div>
+
+</body>
+</html>

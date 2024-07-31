@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Class Selector</title>
+    <style>
+
+        /* :hover */
+        a:hover {
+            color: deeppink;
+            text-decoration: underline;
+        }
+
+        /* :nth-child(n) */
+        ul li:nth-child(even) {
+            background-color: palevioletred;
+        }
+
+        /* :first-child */
+        ul li#dua:first-child {
+            font-weight: bold;
+            background-color: violet;
+        }
+
+        /* :checked */
+        input[type="checkbox"]:checked + label {
+            background-color: cadetblue;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--Pseudo-class :hover digunakan untuk menggaya elemen saat mouse mengarah ke atasnya.-->
+<p> ini adalah sebuah pseudo class  <a href="https://www.google.com">hover</a></p>
+
+
+<!--Pseudo-class :nth-child(n) digunakan untuk memilih elemen berdasarkan urutan ke-n dari anak-anaknya.-->
+<ul>
+    <li id="satu">item 1</li>
+    <li id="dua">item 2</li>
+</ul>
+
+<!-- Pseudo-class :checked Digunakan untuk menggaya elemen input yang dipilih (misalnya checkbox atau radio button).-->
+<input id="tiga" type="checkbox">
+<label for="tiga">Semangat Belajar</label>
+
+</body>
+</html>

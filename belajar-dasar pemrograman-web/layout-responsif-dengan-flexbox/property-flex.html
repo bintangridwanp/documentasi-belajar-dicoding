@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Flex Container</title>
+    <style>
+        .flex-container {
+            display: flex; /* membuat elemen sebagai flexible box */
+            flex-direction: row; /* susunan flex item dijajarkan secara horizontal */
+            flex-wrap: wrap; /* jika membutuhkan, flex item dapat dibungkus ke baris berikutnya */
+            justify-content: space-between; /* mengatur tata letak flex item pada main axis */
+            align-items: center; /* mengatur child element agar berada dalam satu baris pada cross axis */
+            align-content: space-around; /* melakukan perataan terhadap flex item pada setiap baris dalam cross-axis */
+            gap: 10px; /* memberikan jarak antar flex item */
+            border: 2px solid #ccc; /* untuk visualisasi saja */
+            padding: 10px; /* untuk visualisasi saja */
+        }
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: dodgerblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+    </div>
+</body>
+</html>

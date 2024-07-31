@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Items</title>
+    <style>
+        .flex-container {
+            display: flex; /* membuat elemen sebagai flexible box */
+            flex-direction: row; /* susunan flex item dijajarkan secara horizontal */
+            flex-wrap: wrap; /* jika membutuhkan, flex item dapat dibungkus ke baris berikutnya */
+            justify-content: space-between; /* mengatur tata letak flex item pada main axis */
+            align-items: center; /* mengatur child element agar berada dalam satu baris pada cross axis */
+            align-content: space-around; /* melakukan perataan terhadap flex item pada setiap baris dalam cross-axis */
+            gap: 10px; /* memberikan jarak antar flex item */
+            border: 2px solid #ccc; /* untuk visualisasi saja */
+            padding: 10px; /* untuk visualisasi saja */
+        }
+        .flex-item {
+            width: 100px; /* lebar default */
+            height: 100px; /* tinggi default */
+            background-color: dodgerblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .item-1 {
+            order: 2; /* urutan susunan flex item */
+            flex-grow: 1; /* pelebaran ukuran pada main axis */
+            flex-shrink: 1; /* default, bisa menyusutkan ukuran jika perlu */
+            flex-basis: 100px; /* ukuran default sebelum ruang sisa didistribusikan */
+            align-self: flex-start; /* mengatur posisi pada cross-axis */
+        }
+        .item-2 {
+            order: 3;
+            flex-grow: 2;
+            flex-shrink: 0; /* tidak akan menyusutkan ukuran */
+            flex-basis: 150px;
+            align-self: center;
+        }
+        .item-3 {
+            order: 1;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 120px;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="flex-item item-1">1</div>
+    <div class="flex-item item-2">2</div>
+    <div class="flex-item item-3">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+</div>
+
+</body>
+</html>

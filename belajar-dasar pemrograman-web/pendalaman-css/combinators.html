@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinators</title>
+  <style>
+
+    /* Adjacent Sibling Selector (+) */
+    /*Adjacent Sibling Selector (+) dalam CSS digunakan untuk memilih elemen yang berada tepat setelah elemen lain di dalam struktur dokumen HTML.*/
+    h2 + #satu {
+      color: cadetblue;
+    }
+
+    /*General Sibling Selector (~)*/
+    /*General Sibling Selector (~) dalam CSS digunakan untuk memilih semua elemen saudara (siblings) yang berada setelah elemen tertentu, tanpa harus langsung berdekatan atau adjacent.*/
+    p ~ #dua {
+      color: deeppink;
+      margin-left: 20px;
+    }
+
+    /*Child Selector (>)*/
+    /*Child Selector (>) dalam CSS digunakan untuk memilih elemen anak langsung dari elemen induk tertentu.*/
+    ul > #tiga {
+      color: aqua;
+    }
+
+    /*  Descendant Selector (space)*/
+    /*Descendant Selector (spasi) dalam CSS digunakan untuk memilih semua elemen yang berada di dalam elemen tertentu, tidak peduli seberapa dalam elemen tersebut terletak dalam struktur dokumen HTML.*/
+    ul #empat {
+      color: violet;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<h2>Judul 1</h2>
+<!--Adjacent Sibling Selector (+)-->
+<p id="satu">Paragraf pertama</p>
+<!--General Sibling Selector (~)-->
+<p id="dua">Paragraf kedua</p>
+<ul>
+<!-- Child Selector (>)-->
+  <li id="tiga">List item 1</li>
+<!--  Descendant Selector (space)-->
+  <li id="empat">List item 2</li>
+</ul>
+<p>Paragraf ketiga</p>
+<ul>
+  <li>List item 3</li>
+  <li>List item 4</li>
+</ul>
+
+</body>
+</html>
